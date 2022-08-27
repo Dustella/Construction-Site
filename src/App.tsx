@@ -4,6 +4,7 @@ import Landing from "./Landing";
 import { OAuth } from "./Oauth";
 import logo from "./logo.svg";
 import styles from "./App.module.css";
+import Redir from "./Redir";
 
 export const App: Component = () => {
   return (
@@ -13,6 +14,7 @@ export const App: Component = () => {
         <Routes>
           <Route path="/" component={Landing} />
           <Route path="/oauth" component={OAuth} />
+          <Route path="/pvgame/coupon" component={Redir} />
         </Routes>
       </header>
     </div>
